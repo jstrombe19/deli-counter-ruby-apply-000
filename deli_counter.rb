@@ -7,6 +7,7 @@ def line(katz_deli)
     katz_deli.each_with_index do |person, idx|
       lineup += " " + (idx + 1) + ". " + person + " "
     end
+    puts lineup
   else
     puts "The line is currently empty."
   end
