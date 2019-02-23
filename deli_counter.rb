@@ -6,7 +6,7 @@ def line(katz_deli)
     lineup = []
     lineup << "The line is currently:"
     katz_deli.each_with_index do |person, idx|
-      lineup << (idx + 1) 
+      lineup << (idx + 1).to_s + "."
       lineup << "."
       lineup << person
     end
