@@ -3,7 +3,8 @@ katz_deli = []
 
 def line(katz_deli)
   if katz_deli.length > 0 
-    lineup = ["The line is currently:"] 
+    lineup = []
+    lineup << "The line is currently:"
     katz_deli.each_with_index do |person, idx|
       lineup << (idx + 1) 
       lineup << "."
