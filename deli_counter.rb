@@ -5,7 +5,9 @@ def line(katz_deli)
   if katz_deli.length > 0 
     lineup = ["The line is currently:"] 
     katz_deli.each_with_index do |person, idx|
-      lineup << ((idx + 1) + ". " + person + " ")
+      lineup << (idx + 1) 
+      lineup << "."
+      lineup << person
     end
     puts lineup.join(" ")
   else
