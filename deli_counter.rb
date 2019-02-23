@@ -3,11 +3,11 @@ katz_deli = []
 
 def line(katz_deli)
   if katz_deli.length > 0 
-    lineup = "The line is currently:" 
+    lineup = ["The line is currently:"] 
     katz_deli.each_with_index do |person, idx|
-      lineup += " " + (idx + 1) + ". " + person + " "
+      lineup << ((idx + 1) + ". " + person + " ")
     end
-    puts lineup
+    puts lineup.join(" ")
   else
     puts "The line is currently empty."
   end
